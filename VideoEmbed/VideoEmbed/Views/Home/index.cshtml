@@ -1,0 +1,48 @@
+﻿@model dynamic
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>DocTogether Video Sample</title>
+    <script src="~/Scripts/DocTogetherVideo.js"></script>
+    <script src="~/Scripts/Base.js"></script>
+    <link href="~/Style/Base.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div class="container">
+        <div class="page-container">
+            <div class="join-meeting-panel">
+                <header>
+                    <h3>Your App</h3>
+                    Join a meeting today.
+                </header>
+                
+                <div class="input">
+                    <label for="name">Name</label>
+                    <input type="text" maxlength="20" id="name" />
+                </div>
+                <div class="input">
+                    <label for="meeting">Meeting</label>
+                    <select id="meeting">
+                        <option value="meeting1">Synergy</option>
+                        <option value="meeting2">Next Generation</option>
+                        <option value="meeting3">Logistics</option>
+                        <option value="meeting4">Unpack</option>
+                    </select>
+                </div>
+                <div class="input">
+                    <span></span>
+                    <button type="button" id="joinMeetingBtn">Join</button>
+                </div>
+            </div>
+            <div class="video-panel hide"></div>
+        </div>
+    </div>
+</body>
+</html>

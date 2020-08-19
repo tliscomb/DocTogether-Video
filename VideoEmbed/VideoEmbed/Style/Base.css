@@ -1,0 +1,76 @@
+﻿body {
+    background-color: #2d4059;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    color: #2d4059
+}
+
+h3 {
+    margin: 0;
+}
+
+header {
+    margin-bottom: 2em;
+    font-size: 1.3em;
+    color: #EA5455;
+}
+
+.container {
+    background-color: #e5e5e5;
+    height: 100vh;
+    min-width: 50vw;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    overflow: auto;
+}
+
+.join-meeting-panel {
+    padding: 2em;
+    border: 1px solid #decdc3;
+    border-radius: 1em;
+    box-shadow: 2px 2px 5px #decdc3;
+}
+
+.input {
+    font-size: 1.2em;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .5em;
+    align-items: center;
+}
+
+.input select, .input input {
+    margin-left: 1em;
+    font-size: 1.2em;
+    background-color: #decdc3;
+    color: #2d4059;
+    border: none;
+    border-radius: 4px;
+    padding: .3em 1em;
+}
+
+.input button {
+    font-size: 1.2em;
+    background-color: #2d4059;
+    color: #decdc3;
+    border: none;
+    border-radius: 4px;
+    padding: .3em 1em;
+    transition: ease-in-out 2s;
+}
+
+.input button:hover {
+    transform: scale(1.1);
+}
+
+.hide {
+    display: none;
+}
+
+.video-panel {
+    width: 98vw;
+    height: 98vh;
+}
