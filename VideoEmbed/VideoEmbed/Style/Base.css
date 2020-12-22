@@ -74,3 +74,15 @@ header {
     width: 98vw;
     height: 98vh;
 }
+.headroom {
+    margin-top: 2em;
+}
+.welcome-panel {
+    background: #fff;
+    border-radius: 1em;
+    padding: 1.5em;
+    max-width: 500px;
+    display: flex;
+    margin: 1.5em;
+    justify-content: space-evenly;
+}

@@ -1,0 +1,44 @@
+﻿@model VideoEmbed.Controllers.LoadTestingModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>DocTogether Video Load Testing...</title>
+    <meta charset="UTF-16">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script src="https://kit.fontawesome.com/ee6940530e.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="//d79i1fxsrar4t.cloudfront.net/jquery.liveaddress/5.1/jquery.liveaddress.min.js"></script>
+
+    <script src="~/Scripts/DocTogetherVideo.js"></script>
+    <script src="~/Scripts/Base.js"></script>
+    <link href="~/Style/Base.css" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        <div class="welcome-panel">
+            <div>
+                <h1>Load Testing</h1>
+                Thanks for your willingness to help load test our video service.
+                The goal of this tool is to put a heavy video load a to a single server.
+                Once you click the begin button, you will be placed into a room when the system
+                is ready to include you into the process.
+
+                <div class="headroom">
+                    <button type="button" class="btn btn-primary">
+                        <i class="fad fa-hands-helping"></i>
+                        Join Test
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="video-panel"></div>
+    </div>
+</body>
+</html>

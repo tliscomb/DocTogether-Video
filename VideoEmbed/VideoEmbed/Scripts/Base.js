@@ -29,11 +29,21 @@
         }
 
         //call our server to get the meeting room info so we can connect
+
+
         fetch(`../Home/RoomInfo/${meeting}`)
             .then(response => {
                 response.json().then(data => {
                     data.userName = name;
-                    video.connect(data);
+                    let server = document.querySelector('#Server');
+                    if (server && server.value != "0") {
+                        data.socketToken += server.value;
+                        data.videoServerUrl = `https://${server.value}/janus`;
+                    }
+                    if (confirm(data.videoServerUrl)) {
+                        console.log(data);
+                        video.connect(data);
+                    }
                 });
             });
     };

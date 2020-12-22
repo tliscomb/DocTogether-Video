@@ -15,6 +15,12 @@ namespace VideoEmbed.Controllers
             return View("index");
         }
 
+        public ActionResult LoadTesting()
+        {
+            var model = new LoadTestingModel();
+            return View("load_testing", model);
+        }
+
         public JsonResult RoomInfo(string id)
         {
             //Get video conference info, this object will be used client side to connect to the meeting.
@@ -27,5 +33,15 @@ namespace VideoEmbed.Controllers
 
             return Json(meetingRoomData, JsonRequestBehavior.AllowGet);
         }
+
+        public JsonResult HereToTest()
+        {
+            return null;
+        }
+    }
+
+    public class LoadTestingModel
+    {
+
     }
 }

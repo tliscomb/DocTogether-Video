@@ -139,7 +139,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\BaseMvcController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LoadController.cs" />
+    <Compile Include="Controllers\LoadTest.cs" />
     <Compile Include="VideoService\Models\AccessTokenResponse.cs" />
     <Compile Include="VideoService\Models\DoctogetherConfig.cs" />
     <Compile Include="VideoService\VideoConferenceService.cs" />
@@ -154,6 +157,7 @@
     <None Include="packages.config" />
     <Content Include="Views\Home\index.cshtml" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <Content Include="Views\Home\load_testing.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
